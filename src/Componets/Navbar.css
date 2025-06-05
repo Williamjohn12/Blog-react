@@ -1,0 +1,246 @@
+.active{
+    background-color: #2f4f4f;
+}
+
+*{
+    color: rgb(82, 169, 172);
+}
+
+nav .title{
+    
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(82, 169, 172);
+    align-items: center;
+}
+
+nav ul{
+    display: inline-flex;
+    align-items: center;
+    margin-left: 350px;
+    
+}
+
+
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: rgb(82, 169, 172);
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: lighter;
+    font-size: 30px;
+
+}
+
+nav a{
+align-items: center;
+}
+
+nav ul li a:not(.active):hover{
+    background-color: #2f4f4f;
+}
+
+.blog-title{
+    text-align: center;
+    font-size: 4em;
+    color: rgb(82, 169, 172);
+    align-items: center;
+    display: block;
+    flex-direction: column;
+}
+
+.Blog-boot{
+    background-image: url(images/flowa.jpeg);
+    background-color: rgb(0, 0, 0, .6);
+    background-blend-mode: multiply;
+     
+    padding-bottom: 59px;
+}
+
+.fozo{
+    color: rgb(67, 111, 112);
+    justify-content: space-between;
+    text-wrap: wrap;
+    text-align: center;
+    text-indent: 40px;
+    max-width: 800px;
+    margin-left: 270px;
+    margin-top: 20px;
+}
+.wordak {
+    color: rgb(231, 231, 231);
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.main-footer{
+    background-color:  rgb(67, 111, 112);
+    color: white;
+    padding: 20px 0;
+}
+.object-fit-contain{
+    height: 300px;
+    width: 300px;
+    border-radius: 30%;
+    float: right;
+}
+
+.object-fit-containBa{
+    height: 300px;
+    justify-content: space-between;
+    margin-left: 200px;
+    float: left;
+    border-radius: 30%;
+}
+
+.box-c{
+    
+    
+    
+    background:rgb(61, 101, 102);
+    border-radius: 30px;
+    padding-left: 20px;
+    
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    color: 3,3,3;
+    
+    padding: 20px;
+    font-weight: 14px;
+    border-radius: 40px;
+    font-size: 14px;
+    width: 32em;
+    color: rgb(67, 111, 112);
+    text-align: center;
+}
+
+.crt-blgy {
+    width:100%;
+    max-width: 540px;
+    background:rgb(61, 101, 102);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(252, 247, 247);
+    
+ 
+  
+}
+
+.cont{
+    background: black;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    width:100%;
+    max-width: 540px;
+    background:rgb(61, 101, 102);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    justify-content: space-between;
+    flex: 1;
+    position: relative;
+}
+
+.Vis-container {
+    flex: 1;
+    position: relative;
+    text-decoration: none;
+    
+}
+
+
+
+.btn1{
+    display:inline-flex;
+}
+
+.pust{
+    border:none;
+    outline: none;
+    padding:10px 30px;
+    background: rgb(64, 117, 40);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 40px;
+
+}
+
+.clust{
+    border:none;
+    outline: none;
+    padding:10px 25px;
+    background: rgb(153, 30, 30);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.clust:hover{
+    background-color: rgb(252, 0, 0);
+}
+
+.pust:hover{
+    background-color: rgb(131, 192, 39);
+}
+
+.Searcho{
+    
+    background: black;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    width:100%;
+    max-width: 540px;
+    background:rgb(61, 101, 102);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(226, 217, 217) ;
+    justify-content: space-between;
+    flex: 1;
+    position: relative;
+     flex: 1;
+    position: relative;
+    text-decoration: none;
+}
+
+.scubo{
+    color: white;
+}
+
+
+.btn3{
+    display: block;
+    margin-left: 220px;
+    background-color: rgb(62, 135, 136);
+    color: white;
+     border:none;
+    outline: none;
+    padding:10px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 40px;
+    
+}
+

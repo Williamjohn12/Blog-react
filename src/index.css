@@ -1,0 +1,13 @@
+*{
+
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    background: rgb(212, 198, 198);
+
+
+
+}
