@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-const HOST = "https://blog-l740.onrender.com"
+const HOST = "https://blog-react-6uzs.onrender.com"
 
  import { toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
