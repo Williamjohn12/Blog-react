@@ -1,7 +1,8 @@
 
 import postRouter from "./routes/post.routes.js"
 
-import express from "express"
+import express from "/home/william/Documents/dev/blogog/node_modules/express/index.js"
+
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import { fileURLToPath } from 'url';
