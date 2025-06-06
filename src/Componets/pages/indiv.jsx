@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
-const HOST = "https://blog-react-6uzs.onrender.com";
+const HOST = "https://blog-l740.onrender.com";
 
 export const IndivBlog = () => {
   const [searchParams] = useSearchParams();

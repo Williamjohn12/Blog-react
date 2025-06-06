@@ -2,7 +2,7 @@
 import postRouter from "./routes/post.routes.js"
 
 import express from "express"
-
+import dotenv from '../src/Componets/pages/home.jsx';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import { fileURLToPath } from 'url';
@@ -26,7 +26,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('blogger'));
 app.use(cors(corsOpts));
 // Serve static files from the frontend directory
-app.use(express.static(path.resolve("../src/Componets/pages/home.jsx")));
+app.use(express.static(path.resolve("../../blogog/index.html")));
 // Serve images from the public folder outside the root
 app.use('/public', express.static(path.resolve(__dirname, '../../public')));
 //app.use(appRouter);

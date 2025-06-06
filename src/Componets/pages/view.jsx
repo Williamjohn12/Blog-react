@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SearchBar from './search';
 
-const HOST = "https://blog-react-6uzs.onrender.com"
+const HOST = "https://blog-l740.onrender.com"
 
  import { toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
@@ -40,6 +40,7 @@ const HOST = "https://blog-react-6uzs.onrender.com"
       });
 
       if (response.ok) {
+        setPosts(prev => prev.filter(post => post.id !== postId));
         const beb = posts.find(post => post.id === postId);
         toast(`Blog ${beb.title} Deleted Successfully!`);
       } else {
