@@ -9,7 +9,7 @@ function RemovePost() {
   }
 
   const submitPost = async () => {
-    const HOST = "https://blog-l740.onrender.com"
+    const HOST = "https://blog-react-6uzs.onrender.com"
     const title = document.getElementById("box-put").value;
     const content = document.getElementById("box-putb").value;
     const description = document.getElementById("box-putc").value;
@@ -27,7 +27,7 @@ function RemovePost() {
 
        toast("Blog Posted Successfully! Click here to find your Blog! ", {
          onClick: () => { 
-           window.location.href = 'http://localhost:5173/view';
+           window.location.href = `${HOST}/view`;
          }
        });
        <button className="btn btn-success" onClick={() => window.location.href = 'http://localhost:5173/view'}>Click to View</button>
