@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './Componets/Navbar.jsx'
 import { Route, Routes } from 'react-router-dom'
 
-import { View, Home,MakeMake } from './Componets/pages'
+import { View, Home,MakeMake,IndivBlog } from './Componets/pages'
 
 
 const App = () => {
@@ -13,6 +13,7 @@ const App = () => {
         <Route path='/home' element={<Home />} />
         <Route path='/view' element={<View />} />
         <Route path='/MakeMake' element={<MakeMake />} />
+        <Route path="/blog" element={<IndivBlog />} />
       </Routes>
     </div>
   )

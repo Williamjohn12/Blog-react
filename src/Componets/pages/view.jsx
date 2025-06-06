@@ -1,11 +1,20 @@
 import React, { useEffect, useState } from 'react';
-const HOST = "https://blog-react-6uzs.onrender.com"
+import SearchBar from './search';
+
+const HOST = "https://blog-l740.onrender.com"
 
  import { toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 
-export const View = () => {
+
+
+
+
+
+  export const View = () => {
   const [posts, setPosts] = useState([]);
+
+
 
   useEffect(() => {
     async function fetchPosts() {
@@ -31,8 +40,8 @@ export const View = () => {
       });
 
       if (response.ok) {
-        setPosts(prev => prev.filter(post => post.id !== postId));
-        toast(`Blog Deleted Successfully!`);
+        const beb = posts.find(post => post.id === postId);
+        toast(`Blog ${beb.title} Deleted Successfully!`);
       } else {
         console.error('Failed to delete post:', await response.text());
       }
@@ -48,13 +57,9 @@ export const View = () => {
       
       <nav className="navbar bg-body-tertiary">
         <div className="Searcho">
-        <div className="scubo">Search for your Blog!</div>
-        <div className="container-fluid">
-          <form className="d-flex" role="search">
-            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button className="btn3 btn-outline-success btn-success" type="submit">Search</button>
-          </form>
-          </div>
+          <div className="scubo">Search for your Blog!</div>
+          <SearchBar placeholder={"test"} data={posts.map(post => post.title)} />
+            
         </div>
       </nav>
 
@@ -62,7 +67,7 @@ export const View = () => {
         {posts.map(post => (
           <li key={post.id} className="post-item">
             <a
-              href={`file:///home/william/Desktop/hgyg/images/blog/blogger/indiv1.html?id=${post.id}`}
+              href={`/blog?id=${post.id}`}
               className="testesty"
             >
               {post.title}

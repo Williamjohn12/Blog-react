@@ -9,7 +9,7 @@ function RemovePost() {
   }
 
   const submitPost = async () => {
-    const HOST = "https://blog-react-6uzs.onrender.com"
+    const HOST = "https://blog-l740.onrender.com"
     const title = document.getElementById("box-put").value;
     const content = document.getElementById("box-putb").value;
     const description = document.getElementById("box-putc").value;
@@ -34,7 +34,7 @@ function RemovePost() {
        console.log(toast)
        setTimeout(function() {
   window.location.reload();
-}, 6000); // 10000 milliseconds = 10 seconds
+}, 6000); // 10000 milliseconds = 10 seconds PS: by default the progress bar on the toast is 6 seconds about so set it to 6000 after testing
       
     } else {
       toast("Failed to Create Blog. Remember to fill in all of the Blogs parts! ");
