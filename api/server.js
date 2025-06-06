@@ -20,13 +20,13 @@ const app = express()
 const corsOpts = {
     origin: '*'
 }
-
+ 
 app.use(bodyParser.json());
 app.set('view engine', 'ejs');
 app.use(express.static('blogger'));
 app.use(cors(corsOpts));
 // Serve static files from the frontend directory
-app.use(express.static(path.resolve("../../../blogog/index.html")));
+app.use(express.static(path.resolve("../../blogog/index.html")));
 // Serve images from the public folder outside the root
 app.use('/public', express.static(path.resolve(__dirname, '../../public')));
 //app.use(appRouter);
