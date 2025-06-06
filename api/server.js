@@ -2,7 +2,7 @@
 import postRouter from "./routes/post.routes.js"
 
 import express from "express"
-import dotenv from '../src/Componets/pages/home.jsx';
+
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import { fileURLToPath } from 'url';
