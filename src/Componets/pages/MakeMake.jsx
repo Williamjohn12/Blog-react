@@ -27,7 +27,7 @@ function RemovePost() {
 
        toast("Blog Posted Successfully! Click here to find your Blog! ", {
          onClick: () => { 
-           window.location.href = `${HOST}/view`;
+           window.location.href = `http://localhost:5173/view`;
          }
        });
        <button className="btn btn-success" onClick={() => window.location.href = 'http://localhost:5173/view'}>Click to View</button>
