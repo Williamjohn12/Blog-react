@@ -7,10 +7,12 @@ function SearchBar({placeholder, data}) {
     const handlefilter = (event) => {
         const SearchWord = event.target.value
         const newFilter = data.filter((value) => {
-            return value.toLowerCase().includes(SearchWord.toLowerCase());
+            return value.title.toLowerCase().includes(SearchWord.toLowerCase());
         });
         setFilteredData(newFilter);
     }
+
+
     return (
         <div className="search">
             <div className="search-inputs">
@@ -19,10 +21,11 @@ function SearchBar({placeholder, data}) {
                { filteredData.length !== 0 &&
                 <div className="data-result">
                     {filteredData.map((value, key) => {
-                        return <a className="data-item" key={key}>
-                            <p>{value}</p></a>;
+                        return <a className="data-item" href={`/blog?id=${value.id}`} key={key}>
+                            <p>{value.title}</p></a>;
                     })}
                 </div>}
+                
         </div>
     )
 }

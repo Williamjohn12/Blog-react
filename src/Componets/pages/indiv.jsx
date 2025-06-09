@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
+ import { toast } from 'react-toastify';
 
 const HOST = "https://blog-l740.onrender.com";
 
@@ -7,6 +8,8 @@ export const IndivBlog = () => {
   const [searchParams] = useSearchParams();
   const id = searchParams.get('id');
   const [post, setPost] = useState(null);
+
+ 
 
   useEffect(() => {
     async function fetchPost() {
@@ -25,11 +28,35 @@ export const IndivBlog = () => {
 
   if (!post) return <div>Loading or Post not found...</div>;
 
+  const deletePost = async (postId) => {
+    try {
+      const response = await fetch(`${HOST}/delete/${postId}`, {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        
+                
+                toast(`This Blog has been Deleted Successfully! It will disappear once you refresh the page!`);
+      } else {
+        console.error('Failed to delete post:', await response.text());
+      }
+    } catch (error) {
+      console.error('Error deleting post:', error);
+    }
+  };
+
   return (
-    <div style={{ padding: '2rem', color: '#333', background: '#f8f9fa', fontFamily: 'Arial' }}>
-      <h1>{post.title}</h1>
-      <p><strong>Description:</strong> {post.description}</p>
-      <div><strong>Content:</strong><br />{post.content}</div>
+    <div style={{ padding: '40px 30px 70px', color: '#333', background: 'rgb(61, 101, 102)', fontFamily: 'Arial',margin: '100px auto 20px' , borderRadius: '10px', maxWidth: '800px', textAlign: 'center' }}>
+      <h1 className="title-indiv">{post.title}</h1>
+      <p className="desc-indiv"><strong>Description:</strong> {post.description}</p>
+      <div className="content-indiv"><strong>Content:</strong><br />{post.content}</div>
+      <button className="removal" onClick={() => deletePost(post.id)}>Remove</button>
     </div>
   );
 };
+
+//style={{ padding: '2rem', color: '#333', background: '#f8f9fa', fontFamily: 'Arial' }}

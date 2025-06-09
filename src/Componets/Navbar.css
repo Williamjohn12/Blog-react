@@ -270,4 +270,20 @@ input{
 
 .data-item{
     margin-left: 10px;
+    text-decoration: none !important;
+    color: rgb(50, 124, 126) ;
 }
+
+
+.removal {
+          margin-left: 10px;
+          background-color: #ff4d4d;
+          color: white;
+          border: none;
+          padding: 5px 10px;
+          border-radius: 40px;
+          cursor: pointer;
+        }
+        .removal:hover {
+          background-color: rgb(255, 0, 0);
+        }

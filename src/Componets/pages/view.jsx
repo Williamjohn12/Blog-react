@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import SearchBar from './search';
 
-const HOST = "https://blog-l740.onrender.com"
+const HOST = "https://blog-react-6uzs.onrender.com"
 
  import { toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
+import { IndivBlog } from './indiv';
+
 
 
 
@@ -59,8 +61,7 @@ const HOST = "https://blog-l740.onrender.com"
       <nav className="navbar bg-body-tertiary">
         <div className="Searcho">
           <div className="scubo">Search for your Blog!</div>
-          <SearchBar placeholder={"test"} data={posts.map(post => post.title)} />
-            
+          <SearchBar placeholder={"test"} data={posts.map(post => ({title:post.title , id:post.id}))} />
         </div>
       </nav>
 
@@ -75,7 +76,7 @@ const HOST = "https://blog-l740.onrender.com"
             </a>
             <button className="removal" onClick={() => deletePost(post.id)}>Remove</button>
             <p>{post.description}</p>
-            <p>{post.content}</p>
+            
           </li>
         ))}
       </ul>
