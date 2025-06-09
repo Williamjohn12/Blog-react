@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
  import { toast } from 'react-toastify';
 
-const HOST = "https://blog-l740.onrender.com";
+const HOST = "https://blog-react-6uzs.onrender.com";
 
 export const IndivBlog = () => {
   const [searchParams] = useSearchParams();
