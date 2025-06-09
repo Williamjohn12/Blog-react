@@ -287,3 +287,30 @@ input{
         .removal:hover {
           background-color: rgb(255, 0, 0);
         }
+.loadao{
+    color: rgb(207, 198, 198) ;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    width:100%;
+    max-width: 540px;
+    background:rgb(224, 84, 19);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: space-between;
+    flex: 1;
+    position: relative;
+    
+}
+.loadba-gif{
+    width: 100px;
+    height: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 20px;
+    align-items: center;
+}

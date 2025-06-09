@@ -26,7 +26,9 @@ export const IndivBlog = () => {
     if (id) fetchPost();
   }, [id]);
 
-  if (!post) return <div>Loading or Post not found...</div>;
+  if (!post) return <div className='loadao'>Loading or Post not found...
+  <img className='loadba-gif' src='https://global.discourse-cdn.com/sitepoint/original/3X/e/3/e352b26bbfa8b233050087d6cb32667da3ff809c.gif'/>
+  </div>;
 
   const deletePost = async (postId) => {
     try {
@@ -40,7 +42,10 @@ export const IndivBlog = () => {
       if (response.ok) {
         
                 
-                toast(`This Blog has been Deleted Successfully! It will disappear once you refresh the page!`);
+                toast(`This Blog has been Deleted Successfully! It will disappear in a few seconds!`);
+                setTimeout(function() {
+  window.location.reload();
+}, 6000);
       } else {
         console.error('Failed to delete post:', await response.text());
       }
