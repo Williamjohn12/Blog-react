@@ -314,3 +314,7 @@ input{
     margin-top: 20px;
     align-items: center;
 }
+
+.pagination{
+    padding-left: 120px;
+}

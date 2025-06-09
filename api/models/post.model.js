@@ -3,7 +3,17 @@ import { getDbClient } from "../lib/db.js";
 const client = getDbClient();
 
 export const getAllPosts = async () => {
-    const result = await client.query('SELECT * FROM "Post" ');
+    const result = await client.query('SELECT * FROM "Post" LIMIT 15 ');
+    
+
+    return result.rows;
+}
+export const getAllPostsF15 = async () => {
+    const result = await client.query('SELECT * FROM "Post" LIMIT 15 OFFSET 15 ');
+    return result.rows;
+}
+export const getAllPostsS15 = async () => {
+    const result = await client.query('SELECT * FROM "Post" lIMIT 15 OFFSET 30');
     
 
     return result.rows;
