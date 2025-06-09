@@ -27,11 +27,11 @@ function RemovePost() {
 
        toast("Blog Posted Successfully! Click here to find your Blog! ", {
          onClick: () => { 
-           window.location.href = `http://localhost:5173/view`;
+           window.location.href = `/view`;
          }
        });
-       <button className="btn btn-success" onClick={() => window.location.href = 'http://localhost:5173/view'}>Click to View</button>
-       console.log(toast)
+       
+       
        setTimeout(function() {
   window.location.reload();
 }, 6000); // 10000 milliseconds = 10 seconds PS: by default the progress bar on the toast is 6 seconds about so set it to 6000 after testing

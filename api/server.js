@@ -32,7 +32,12 @@ app.use('/public', express.static(path.resolve(__dirname, '../../public')));
 //app.use(appRouter);
 app.use(postRouter);
 
+const frontendPath = path.resolve(__dirname, "blogog");
+app.use(express.static(frontendPath))
 
+app.get("*", (req, res) => {
+  res.sendFile(path.join(frontendPath, "index.html"));
+});
 
 app.listen(PORT, () => {
     console.log(`Server started on port ${PORT}`);

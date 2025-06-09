@@ -61,7 +61,7 @@ import { IndivBlog } from './indiv';
       <nav className="navbar bg-body-tertiary">
         <div className="Searcho">
           <div className="scubo">Search for your Blog!</div>
-          <SearchBar placeholder={"test"} data={posts.map(post => ({title:post.title , id:post.id}))} />
+          <SearchBar placeholder={"Start Search!"} data={posts.map(post => ({title:post.title , id:post.id}))} />
         </div>
       </nav>
 

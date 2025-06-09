@@ -57,9 +57,9 @@ export const IndivBlog = () => {
   return (
     <div style={{ padding: '40px 30px 70px', color: '#333', background: 'rgb(61, 101, 102)', fontFamily: 'Arial',margin: '100px auto 20px' , borderRadius: '10px', maxWidth: '800px', textAlign: 'center' }}>
       <h1 className="title-indiv">{post.title}</h1>
-      <p className="desc-indiv"><strong>Description:</strong> {post.description}</p>
+      
       <div className="content-indiv"><strong>Content:</strong><br />{post.content}</div>
-      <button className="removal" onClick={() => deletePost(post.id)}>Remove</button>
+      <button className="removal" onClick={() => deletePost(post.id)}>Delete</button>
     </div>
   );
 };
