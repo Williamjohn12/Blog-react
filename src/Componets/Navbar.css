@@ -59,7 +59,7 @@ nav ul li a:not(.active):hover{
 }
 
 .Blog-boot{
-    background-image: url(images/flowa.jpeg);
+    background-image: url(images/Pic2.jpeg);
     background-color: rgb(0, 0, 0, .6);
     background-blend-mode: multiply;
      
@@ -309,7 +309,7 @@ input{
 .loadba-gif{
     width: 100px;
     height: 100px;
-    margin-left: 150px;
+    margin-left: 170px;
     margin-right: 150px;
     margin-top: 20px;
     align-items: center;
@@ -317,4 +317,23 @@ input{
 
 .pagination{
     padding-left: 120px;
+}
+
+.spacemaker{
+    color:rgb(224, 84, 19) ;
+}
+
+.carousel{
+   margin-top: 50px;
+   display: flex !important;
+   background-color: white !important;
+}
+
+.d-block{
+    width: 300px;
+    height: 300px;
+    margin-left: 400px;
+    
+    background-color: white !important;
+    
 }

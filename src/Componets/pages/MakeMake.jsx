@@ -25,7 +25,7 @@ function RemovePost() {
     if (response.ok) {
    
 
-       toast("Blog Posted Successfully! Click here to find your Blog! ", {
+       toast("Blog Posted Successfully! Click here to find your Blog! ", { pauseOnHover: false,
          onClick: () => { 
            window.location.href = `/view`;
          }
@@ -37,7 +37,7 @@ function RemovePost() {
 }, 6000); // 10000 milliseconds = 10 seconds PS: by default the progress bar on the toast is 6 seconds about so set it to 6000 after testing
       
     } else {
-      toast("Failed to Create Blog. Remember to fill in all of the Blogs parts! ");
+      toast("Failed to Create Blog. Remember to fill in all of the Blogs parts! ",{pauseOnHover: false,});
     }
   }
 

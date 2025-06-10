@@ -28,6 +28,7 @@ export const IndivBlog = () => {
 
   if (!post) return <div className='loadao'>Loading or Post not found...
   <img className='loadba-gif' src='https://global.discourse-cdn.com/sitepoint/original/3X/e/3/e352b26bbfa8b233050087d6cb32667da3ff809c.gif'/>
+   <p className="spacemaker"> . . . . </p>If nothing appears within a few seconds, try searching for it <a href="/view">here</a>.
   </div>;
 
   const deletePost = async (postId) => {
@@ -40,9 +41,7 @@ export const IndivBlog = () => {
       });
 
       if (response.ok) {
-        
-                
-                toast(`This Blog has been Deleted Successfully! It will disappear in a few seconds!`);
+                toast(`This Blog has been Deleted Successfully! It will disappear in a few seconds!`, { pauseOnHover: false });
                 setTimeout(function() {
   window.location.reload();
 }, 6000);

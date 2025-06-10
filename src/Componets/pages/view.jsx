@@ -44,7 +44,7 @@ import { IndivBlog } from './indiv';
       if (response.ok) {
         setPosts(prev => prev.filter(post => post.id !== postId));
         const beb = posts.find(post => post.id === postId);
-        toast(`Blog ${beb.title} Deleted Successfully!`);
+        toast(`Blog ${beb.title} Deleted Successfully!`,{pauseOnHover: false,});
       } else {
         console.error('Failed to delete post:', await response.text());
       }
@@ -80,17 +80,7 @@ import { IndivBlog } from './indiv';
           </li>
         ))}
       </ul>
-      <nav aria-label="...">
-  <ul className="pagination">
-    <li className="page-item disabled"><a  className="page-link">Previous</a></li>
-    <li className="page-item active" ><a className="page-link" href="#" aria-current="page">1</a></li>
-    <li className="page-item">
-      <a className="page-link" href="1">2</a>
-    </li>
-    <li className="page-item"><a className="page-link" href="2">3</a></li>
-    <li className="page-item"><a className="page-link" href="1">Next</a></li>
-  </ul>
-</nav>
+      
 
       <div className="main-footer">
         <div className="wordak">&copy; 2025 BlogCorp</div>

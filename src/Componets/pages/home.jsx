@@ -1,7 +1,10 @@
 import React from 'react'
 
+
+
 export const Home = () => {
   return <div>
+    
 
     <div className="fozo"> <img src="https://s3.pixers.pics/pixers/160/FO/66/70/88/35/160_FO66708835_7d7acbc9b36b077f3337dc8e88a8699f.jpg" className="object-fit-contain border rounded" alt="Placeholder: Object fit none"></img>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, iure.
     Adipisci doloremque velit molestiae voluptas repudiandae blanditiis reprehenderit in modi.
