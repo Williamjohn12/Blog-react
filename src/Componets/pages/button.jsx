@@ -1,13 +1,20 @@
+import {  ToastContainer } from 'react-toastify';
 
+  const CloseButton = ({ closeToast }) => (
+    <i
+      className="material-icons"
+      onClick={closeToast}
+    >
+    delete
+    </i>
+  );
 
-import React from 'react'
+export const Button = () => {
 
-
-
-const Button = ({color}) => {
   return (
-    <button className={`btn btn-${color}`}>Button</button>
-  )
+    <div>
+      <ToastContainer closeButton={CloseButton} />
+    </div>
+  );
 }
 
-export default Button

@@ -323,11 +323,7 @@ input{
     color:rgb(224, 84, 19) ;
 }
 
-.carousel{
-   margin-top: 50px;
-   display: flex !important;
-   background-color: white !important;
-}
+
 
 .d-block{
     width: 300px;
@@ -336,4 +332,72 @@ input{
     
     background-color: white !important;
     
+}
+
+.card-img-top{
+    width: 260px;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 150px;
+    border-radius: 10px;
+}
+.card{
+    width: 300px;
+    height: 350px;
+    margin-left: 20px;
+    background-color:rgb(61, 101, 102);
+    border-radius: 10px;
+    color: white !important;
+    
+}
+.big-group{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+
+.card-text{
+    color: white !important;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.card-title{
+    color: white !important;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.card-body{
+    margin-top: 20px;
+}
+.btna{
+    background: rgb(50, 124, 126);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 10px 20px;
+    margin-left: 80px;
+    padding-top: 0px;
+}
+
+.carousel-image{
+border-radius: 30px;
+}
+.carlack{
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 330px;
+    
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

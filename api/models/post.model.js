@@ -10,6 +10,7 @@ export const getAllPosts = async () => {
 }
 
 
+
 export const getPostById = async (id) => {
     const result = await client.query('SELECT * FROM "Post" WHERE id = $1', [id]);
     return result.rows[0];

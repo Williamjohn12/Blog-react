@@ -44,7 +44,7 @@ import { IndivBlog } from './indiv';
       if (response.ok) {
         setPosts(prev => prev.filter(post => post.id !== postId));
         const beb = posts.find(post => post.id === postId);
-        toast(`Blog ${beb.title} Deleted Successfully!`,{pauseOnHover: false,});
+        toast(`Blog ${beb.title} Deleted Successfully!`,{pauseOnHover: false, closeButton: true});
       } else {
         console.error('Failed to delete post:', await response.text());
       }

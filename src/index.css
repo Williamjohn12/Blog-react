@@ -63,16 +63,26 @@
 }
 
 .Toastify__close-button {
-    color: black !important;
+    color: white !important;
+    background-color: rgb(238, 232, 232) !important;
+    border-radius: 50%;
+    margin-left: 2px;
+    align-items: center;
+    background: white !important;
 }
 .Toastify__close-button--default {
     color: black !important;
+    
 }
 
 .Toastify__close-button > svg {
     color: black !important;
+    background: white !important;
+    border-radius: 30%;
 }
-
+.Toastify__close-button:hover,
 .Toastify__close-button:focus {
+    
     color: black !important;
+    
 }

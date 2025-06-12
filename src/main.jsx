@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
-      <ToastContainer  />
+      <ToastContainer closeButton={false} />
      
     </BrowserRouter>
   </React.StrictMode>
